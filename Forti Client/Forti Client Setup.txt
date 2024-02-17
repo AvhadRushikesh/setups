@@ -1,0 +1,5 @@
+Connection Name 		: MES
+Remote Gateway  		: https://mes.vpn.magna5cloud.com:9443
+Customization Port 	: 9443
+User Name 			: MESinc/gavadh
+Password 			: ASUrkxwx2dtb2DV
