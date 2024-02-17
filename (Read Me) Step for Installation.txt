@@ -1,0 +1,44 @@
+--------------Step To Install Office 2021.-----------------
+
+1.Cut this (Office 2021) Folder and paste in to Desktop.
+
+2.Type CMD in Windows to Open Command Prompt Right click on CMD and click on Run as Administration.
+
+3.Open Office Folder select path and enter in Command Prompt and click on Enter Button.
+
+4.Enter this command in command Prompt and click enter.
+		setup /configure configuration.xml
+  (Copied from Office Deployement Tool 2021 site)
+
+5.The Installation of MS Office 2021 will Start.
+
+6.Once Done the Installation type exit in command Prompt and hit Enter.
+
+
+
+
+-----------After Installtion to Activate the Product Key of office follow the steps-------
+
+1.Open Command Prompt (Type CMD in windows and using right click Run as administration)
+(Type CMD in Windows to Open Command Prompt Right click on CMD and click on Run as Administration.)
+
+2.Get into the Office directory in cmd.
+(Open Office Folder select path and enter in Command Prompt and click on Enter Button.)
+	cd /d %ProgramFiles(x86)%\Microsoft Office\Office16 (Command for 32 bit)
+	cd /d %ProgramFiles%\Microsoft Office\Office16 (Command for 64 bit)
+
+3.Install Office 2021 volume license.
+	for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+	(Enter this Command to install office 2021 volume license.)
+	(This step is required. You can not install the KMS client product key of Office without a volume license.)
+
+4. Activate your Office using the KMS key.
+Make sure your device is connected to the internet, then run the following commands.
+	cscript ospp.vbs /setprt:1688
+	cscript ospp.vbs /unpkey:6F7TH >nul
+	cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+	cscript ospp.vbs /sethst:s8.uk.to
+	cscript ospp.vbs /act
+(Copy All Five Command Paste into CMD and press Enter button.)
+
+5.Type exit in command Prompt and hit Enter to Exit the CMD.
